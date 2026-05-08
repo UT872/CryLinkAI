@@ -9,9 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
+            /* Cry Link AI Brand Colors */
             --bg-gradient: radial-gradient(circle at top right, #2e1065, #0f172a);
             --card-bg: rgba(30, 41, 59, 0.6);
-            --accent-color: #d946ef;
+            --accent-color: #d946ef; /* Magenta */
             --accent-gradient: linear-gradient(135deg, #3b82f6, #d946ef);
             --text-main: #f1f5f9;
             --text-sub: #94a3b8;
@@ -19,80 +20,192 @@
             --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         * { box-sizing: border-box; }
+
         body {
             font-family: 'Inter', 'Noto Sans JP', sans-serif;
-            background: var(--bg-gradient); background-attachment: fixed;
-            color: var(--text-main); margin: 0;
-            display: flex; justify-content: center; align-items: flex-start;
-            min-height: 100vh; overflow-x: hidden; padding: 60px 0;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding: 60px 0;
         }
-        .container { max-width: 650px; width: 90%; text-align: center; }
+
+        .container {
+            max-width: 650px;
+            width: 90%;
+            text-align: center;
+        }
+
+        /* App Icon */
         .app-icon {
-            width: 120px; height: 120px; border-radius: 28px;
-            margin: 0 auto 32px; display: block;
+            width: 120px;
+            height: 120px;
+            border-radius: 28px;
+            margin: 0 auto 32px;
+            display: block;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(217, 70, 239, 0.3);
-            border: 1px solid var(--border-color); background: #fff;
+            border: 1px solid var(--border-color);
+            background: #fff; /* アイコンアセット読み込み用 */
         }
+
         h1 {
-            font-size: 2.8rem; font-weight: 700; margin-bottom: 16px;
-            background: var(--accent-gradient); -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; letter-spacing: -0.02em;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.02em;
         }
+
+        /* Marketing Text Section */
         .hero-text {
-            color: var(--text-main); font-size: 1.05rem; line-height: 1.8;
-            margin-bottom: 48px; text-align: left;
-            background: rgba(255, 255, 255, 0.03); padding: 32px;
-            border-radius: 24px; border: 1px solid var(--border-color); backdrop-filter: blur(4px);
+            color: var(--text-main);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 48px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 32px;
+            border-radius: 24px;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(4px);
         }
-        .hero-text span { color: var(--accent-color); font-weight: 700; }
-        .nav-grid { display: grid; gap: 16px; margin-bottom: 48px; }
+
+        .hero-text span {
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        /* Nav Links Grid */
+        .nav-grid {
+            display: grid;
+            gap: 16px;
+            margin-bottom: 48px;
+        }
+
         .nav-card {
-            display: flex; align-items: center; justify-content: space-between;
-            padding: 22px 30px; background: var(--card-bg);
-            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-            border-radius: 20px; border: 1px solid var(--border-color);
-            text-decoration: none; color: var(--text-main); transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 22px 30px;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            color: var(--text-main);
+            transition: var(--transition);
+            text-align: left;
         }
+
         .nav-card:hover {
-            transform: translateY(-4px); background: rgba(217, 70, 239, 0.08);
-            border-color: var(--accent-color); box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            transform: translateY(-4px);
+            background: rgba(217, 70, 239, 0.08);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
         }
-        .nav-card .info h3 { margin: 0; font-size: 1.1rem; color: #fff; font-weight: 700; }
-        .nav-card .info p { margin: 4px 0 0; font-size: 0.85rem; color: var(--text-sub); }
-        .nav-card .arrow { color: var(--accent-color); font-size: 1.4rem; opacity: 0.8; }
+
+        .nav-card .info h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .nav-card .info p {
+            margin: 4px 0 0;
+            font-size: 0.85rem;
+            color: var(--text-sub);
+        }
+
+        .nav-card .arrow {
+            color: var(--accent-color);
+            font-size: 1.4rem;
+            opacity: 0.8;
+        }
+
+        /* CTA Button */
         .btn-support {
-            display: inline-flex; align-items: center; gap: 10px;
-            background: var(--accent-gradient); color: #fff;
-            padding: 18px 44px; border-radius: 50px; font-weight: 700;
-            text-decoration: none; transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--accent-gradient);
+            color: #fff;
+            padding: 18px 44px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition);
             box-shadow: 0 4px 20px rgba(217, 70, 239, 0.4);
         }
-        .btn-support:hover { transform: scale(1.05); box-shadow: 0 8px 30px rgba(217, 70, 239, 0.6); }
-        footer { margin-top: 80px; color: var(--text-sub); font-size: 0.85rem; opacity: 0.6; }
+
+        .btn-support:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(217, 70, 239, 0.6);
+        }
+
+        footer {
+            margin-top: 80px;
+            color: var(--text-sub);
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2.2rem; }
+            .hero-text { font-size: 0.95rem; padding: 24px; }
+            .nav-card { padding: 18px 24px; }
+            .app-icon { width: 100px; height: 100px; }
+        }
     </style>
 </head>
 <body>
+
 <div class="container">
-    <img src="icon.jpg" alt="Cry Link AI Icon" class="app-icon">
+    <img src="icon.png" alt="Cry Link AI Icon" class="app-icon">
+    
     <h1>Cry Link AI</h1>
+    
     <div class="hero-text">
-        言葉にならない赤ちゃんの泣き声。AIがその<span>心の声を「翻訳」</span>し、パパとママの毎日をサポートします。最新の音声解析技術で、ニーズを瞬時に特定。<span>「なぜ泣いているかわからない」不安を安心に変え</span>、家族の笑顔をつなぐ、次世代の育児体験を。
+        言葉にならない赤ちゃんの泣き声。AIがその<span>心の声を「翻訳」</span>し、パパとママの毎日をサポートします。最新の音声解析技術で、お腹が空いた、眠い、不快といったニーズを瞬時に特定。<span>「なぜ泣いているかわからない」不安を安心に変え</span>、家族の笑顔をつなぐ、次世代の育児体験をiPhoneから。
     </div>
+
     <nav class="nav-grid">
         <a href="./privacypolicy/" class="nav-card">
-            <div class="info"><h3>Privacy Policy</h3><p>プライバシーポリシー</p></div>
+            <div class="info">
+                <h3>Privacy Policy</h3>
+                <p>プライバシーポリシー</p>
+            </div>
             <span class="arrow">▹</span>
         </a>
+
         <a href="./terms-of-service/" class="nav-card">
-            <div class="info"><h3>Terms of Service</h3><p>利用規約</p></div>
+            <div class="info">
+                <h3>Terms of Service</h3>
+                <p>利用規約</p>
+            </div>
             <span class="arrow">▹</span>
         </a>
     </nav>
-    <a href="https://forms.gle/aHAoB4necT12PP4k9" class="btn-support" target="_blank">
+
+    <a href="https://forms.gle/R2PrYMytZmr4cX7YA" class="btn-support" target="_blank">
         お問い合わせ・フィードバック
     </a>
-    <footer>&copy; 2026 Teppei Uomi. All rights reserved.</footer>
+
+    <footer>
+        &copy; 2026 Teppei Uomi. All rights reserved.
+    </footer>
 </div>
+
 </body>
 </html>
