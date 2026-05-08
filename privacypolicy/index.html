@@ -1,140 +1,14 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー - Cry Link AI</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            /* Cry Link AI Color Palette: Deep Blue to Magenta */
-            --bg-gradient: radial-gradient(circle at top right, #2e1065, #0f172a);
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --accent-color: #d946ef; /* Magenta Accent */
-            --accent-gradient: linear-gradient(135deg, #3b82f6, #d946ef);
-            --text-main: #f1f5f9;
-            --text-sub: #94a3b8;
-            --border-color: rgba(255, 255, 255, 0.1);
-            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
-        }
-
-        * { box-sizing: border-box; }
-        body {
-            font-family: 'Inter', 'Noto Sans JP', sans-serif;
-            background: var(--bg-gradient);
-            background-attachment: fixed;
-            color: var(--text-main);
-            line-height: 1.7;
-            margin: 0; padding: 0;
-            min-height: 100vh;
-            display: flex; justify-content: center; align-items: flex-start;
-        }
-
-        .container {
-            max-width: 850px; width: 95%;
-            margin: 40px 0; padding: 40px;
-            background: var(--card-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-radius: 24px;
-            border: 1px solid var(--border-color);
-            box-shadow: var(--glass-shadow);
-        }
-
-        header { text-align: center; margin-bottom: 40px; }
-        h1 {
-            font-size: 2.2rem; font-weight: 700;
-            background: var(--accent-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
-        }
-
-        .last-update { color: var(--text-sub); font-size: 0.85rem; letter-spacing: 0.1em; }
-
-        h2 {
-            display: flex; align-items: center;
-            font-size: 1.3rem; color: #fff;
-            margin-top: 40px; margin-bottom: 15px;
-            border-left: 4px solid var(--accent-color);
-            padding-left: 15px;
-        }
-
-        p, li { color: #cbd5e1; font-size: 0.95rem; }
-        ul { list-style: none; padding: 0; }
-        li { position: relative; padding-left: 20px; margin-bottom: 10px; }
-        li::before { content: '●'; position: absolute; left: 0; color: var(--accent-color); font-size: 0.7rem; top: 0.2rem; }
-
-        strong { color: #fff; border-bottom: 1px solid var(--accent-color); }
-        a { color: #3b82f6; text-decoration: none; }
-
-        .important-box {
-            background: rgba(217, 70, 239, 0.1);
-            border: 1px solid rgba(217, 70, 239, 0.3);
-            padding: 20px; border-radius: 12px; margin: 20px 0;
-        }
-
-        .contact-box {
-            margin-top: 50px; padding: 25px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 16px; border: 1px solid var(--border-color);
-        }
-
-        footer { text-align: center; margin-top: 30px; color: var(--text-sub); font-size: 0.75rem; }
-    </style>
-</head>
 <body>
 <div class="container">
     <header>
         <h1>プライバシーポリシー</h1>
         <div class="last-update">最終更新日：2026年5月8日</div>
     </header>
-
     <section>
-        <p>Teppei Uomi（以下「当方」）は、提供するモバイルアプリケーション「Cry Link AI」（以下「本アプリ」）における、利用者の情報の取り扱いについて、以下のとおり定めます。</p>
-
-        <div class="important-box">
-            <strong>【最重要事項：録音データの取り扱い】</strong>
-            <p>本アプリは赤ちゃんの泣き声解析のためにマイクを使用しますが、録音された音声データは解析完了後、<strong>直ちにサーバーから完全に消去されます。</strong>当方が音声を保存したり、第三者へ提供したり、AIの学習に利用することはありません。</p>
-        </div>
-
-        <h2>1. 取得する情報</h2>
-        <ul>
-            <li><strong>音声データ</strong>：解析時に送信される音声（解析後に即時破棄）。</li>
-            <li><strong>解析ログ</strong>：解析結果（感情・ニーズ等のカテゴリ）、利用日時、AIとの対話履歴（アカウント作成時のみ保存）。</li>
-            <li><strong>端末情報</strong>：OSバージョン、機種名、言語設定。</li>
-            <li><strong>広告識別子</strong>：ATT許諾時のみ取得する広告ID。</li>
-            <li><strong>アカウント情報</strong>：Sign in with Apple利用時の匿名ID、メールアドレス（任意）。</li>
-        </ul>
-
-        <h2>2. 利用目的</h2>
-        <ul>
-            <li>泣き声の解析および結果表示のため</li>
-            <li>AIによるアドバイス機能の提供のため</li>
-            <li>広告表示および効果測定（Google AdMob）のため</li>
-            <li>サービスの改善、不具合の調査のため</li>
-        </ul>
-
-        <h2>3. 第三者提供・委託先</h2>
-        <p>本サービス提供のため、以下の外部サービスを利用します。</p>
-        <ul>
-            <li><strong>OpenAI API / 他生成AIプロバイダ</strong>：音声の解析・テキスト生成。送信データがAI学習に利用されないオプトアウト設定を適用しています。</li>
-            <li><strong>Supabase</strong>：データベースおよび認証（アカウント作成時のみ）。</li>
-            <li><strong>Google AdMob</strong>：広告配信。</li>
-        </ul>
-
-        <h2>4. データの保存と削除</h2>
-        <p>音声データ以外の解析ログについては、アプリ内からいつでも削除可能です。アカウントを削除した場合、関連する全てのデータは速やかに消去されます。</p>
-
-        <h2>5. 免責事項</h2>
-        <p>本アプリは医学的診断を行うものではありません。解析結果はあくまで参考情報であり、緊急時や不安がある場合は必ず医療機関を受診してください。</p>
-
         <h2>6. お問い合わせ</h2>
         <div class="contact-box">
             <p><strong>運営者:</strong> Teppei Uomi</p>
-            <p><strong>窓口:</strong> <a href="https://forms.gle/R2PrYMytZmr4cX7YA" target="_blank">お問い合わせ・フィードバックフォーム</a></p>
+            <p><strong>窓口:</strong> <a href="https://forms.gle/aHAoB4necT12PP4k9" target="_blank">お問い合わせ・フィードバックフォーム</a></p>
         </div>
     </section>
     <footer>&copy; 2026 Teppei Uomi</footer>
