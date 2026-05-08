@@ -11,7 +11,7 @@
         :root {
             --bg-gradient: radial-gradient(circle at top right, #1e1b4b, #0f172a);
             --card-bg: rgba(30, 41, 59, 0.7);
-            --accent-color: #3b82f6; /* Blue Accent */
+            --accent-color: #3b82f6; 
             --accent-gradient: linear-gradient(135deg, #3b82f6, #d946ef);
             --text-main: #f1f5f9;
             --text-sub: #94a3b8;
@@ -46,6 +46,8 @@
             -webkit-text-fill-color: transparent;
         }
 
+        .last-update { color: var(--text-sub); font-size: 0.85rem; letter-spacing: 0.1em; }
+
         h2 {
             font-size: 1.3rem; color: #fff;
             margin-top: 40px; border-bottom: 1px solid var(--accent-color);
@@ -53,12 +55,22 @@
         }
 
         p, li { color: #cbd5e1; font-size: 0.95rem; }
+        ul { list-style: none; padding-left: 20px; }
+        li { margin-bottom: 10px; }
         .caution { color: #f87171; font-weight: bold; }
 
         .contact-box {
             margin-top: 50px; padding: 25px;
             background: rgba(255, 255, 255, 0.03);
-            border-radius: 16px;
+            border-radius: 16px; border: 1px solid var(--border-color);
+        }
+
+        footer { text-align: center; margin-top: 30px; color: var(--text-sub); font-size: 0.75rem; }
+
+        @media (max-width: 480px) {
+            .container { padding: 30px 20px; }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.1rem; }
         }
     </style>
 </head>
@@ -106,9 +118,11 @@
         <h2>7. お問い合わせ</h2>
         <div class="contact-box">
             <p><strong>運営者:</strong> Teppei Uomi</p>
-            <p><strong>窓口:</strong> <a href="https://forms.gle/R2PrYMytZmr4cX7YA" target="_blank" style="color:#3b82f6;">お問い合わせ・フィードバックフォーム</a></p>
+            <p><strong>窓口:</strong> <a href="https://forms.gle/aHAoB4necT12PP4k9" target="_blank" style="color:#d946ef;">お問い合わせ・フィードバックフォーム</a></p>
         </div>
     </section>
+    
+    <footer>&copy; 2026 Teppei Uomi</footer>
 </div>
 </body>
 </html>
